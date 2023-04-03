@@ -17,7 +17,7 @@ func get_value(key: String, default = null):
 
 func remove_value(key: String) -> void:
 	if _kv_cache.has(key):
-		_kv_cache.erase(key)
+		var _res = _kv_cache.erase(key)
 
 func print_cache() -> void:
 	print("[KV-CACHE] number of keys: ", _kv_cache.size())
